@@ -20,7 +20,10 @@ let isProcessing = false;
 
 
 app.use(cors({
-  origin: 'http://localhost:3001',
+  origin: [
+    'http://localhost:3001', 
+    'https://drawingai-f48d3.web.app'
+  ],
   methods: ['GET', 'POST', 'FETCH'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
